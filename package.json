@@ -2,7 +2,6 @@
   "name": "agency",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://bscodes.github.io/react-agency-website/",
   "dependencies": {
     "gh-pages": "^6.2.0",
     "react": "^17.0.2",
