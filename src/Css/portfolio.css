@@ -1,0 +1,148 @@
+.portfolio-parent {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 90px;
+
+}
+
+.portfolio-outer {
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  max-width: 1280px;
+  flex-direction: column;
+}
+
+.Section-4-contianer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 1376px;
+}
+
+.S4-heading h1 {
+  color: rgb(73, 111, 191);
+  font-size: 2.5rem;
+  padding: 20px 0px;
+  font-weight: 600;
+}
+
+.S4-technologies {
+  width: 100%;
+}
+
+.S4-technologies-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding-bottom: 2rem;
+}
+
+.S4-technologies h4 {
+  color: rgb(73, 111, 191);
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+.S4-technologies h4:hover {
+  cursor: pointer;
+  background-color: #f5f5f5;
+}
+
+.S4-technologies #S4-mobile {
+  background-color: rgb(73, 111, 191);
+  color: white;
+  border-radius: 1rem;
+}
+
+.s4-icons-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  width: 90%;
+}
+
+.s4-container {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)) !important;
+  width: 90%;
+  column-gap: 20px;
+  row-gap: 2rem;
+  max-width: 1376px;
+  display: flex;
+}
+
+.s4-box {
+  width: 160px;
+  border: 3px solid rgb(238, 238, 238);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 1rem;
+  height: 100px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.s4-box:hover {
+  border: 2px solid rgb(73, 111, 191);
+  transform: scale(1.2);
+
+}
+
+.s4-box img {
+  width: 40px;
+  padding-bottom: 10px;
+}
+
+.s4-box p {
+  font-size: 0.9rem;
+}
+
+#android img {
+  width: 35px;
+}
+
+#native img {
+  width: 60px;
+}
+
+#flutter img {
+  width: 30px;
+}
+
+#kotlin img {
+  width: 30px;
+}
+#html img {
+  width: 50px;
+}
+#js img {
+  width: 70px;
+  padding-bottom: 0 !important;
+}
+#bootstrap img {
+  width: 70px;
+  padding-bottom: 0 !important;
+}
+#angular img {
+  width: 70px;
+  padding-bottom: 0 !important;
+}
+#node img {
+  width: 50px;
+}
+#bootstrap img {
+  width: 70px;
+  padding-bottom: 0 !important;
+}
+#c img, #cPlus img, #python img  {
+  width: 50px;
+}

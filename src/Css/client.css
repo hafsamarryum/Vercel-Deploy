@@ -1,0 +1,108 @@
+.client-parent{
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 90px;
+
+}
+.client-outer{
+  display: flex;
+  width: 90%;
+  justify-content: space-between;
+  max-width: 1280px;   
+  margin-bottom: 30px;
+  flex-direction: column;
+  color: rgb(105, 105, 105);
+}
+.client-upper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-top: 60px;
+}
+
+
+.client-upper span {
+  color: rgb(73, 111, 191);
+  font-size: 1.5rem;
+  margin: 15px 0;
+  font-weight: 600;
+}
+
+.client-upper .outer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.client-upper #said {
+  font-size: 2.8rem;
+  line-height: 50px;
+  margin: 15px 0;
+  font-weight: 600;
+  color: #585353;
+}
+
+.client-upper #para {
+  width: 50%;
+  font-size: 1.2rem;
+}
+
+.client-lower {
+  width: 100%;
+  overflow: hidden;
+  justify-content: space-around;
+  column-gap: 10px;
+  /* border: 1px solid blue; */
+}
+
+.client-card {
+  width: 100%;
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px 40px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.client-card #first-para {
+  min-height: 140px;
+}
+
+.client-card #test-icon {
+  height: 50px;
+}
+
+.client-card #first-para {
+  margin-top: 30px;
+}
+
+.avatar-profession-outer {
+  display: flex;
+  column-gap: 5px;
+}
+
+.avatar-div {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  column-gap: 20px;
+}
+.avatar-profession-outer img {
+  width: 60px;
+  height: 60px !important;
+}
+.name-description-outer h5{
+  font-size: 1rem;
+
+}
+.slick-dots{
+  position: relative !important;
+  padding-bottom: 20px !important;
+  bottom: 0px !important;
+}
+
+.slick-slide>div {padding: 0 15px;}
