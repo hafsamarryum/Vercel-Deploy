@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import '../Css/portfolio.css'
 import ios from '../assest/portfolio/ios.svg'
 import android from '../assest/portfolio/android.svg'
@@ -18,6 +18,11 @@ import cPlus from '../assest/portfolio/C++.png'
 import python from '../assest/portfolio/python.png'
 
 const Portfolio = () => {
+  const [toogle, setToogle] = useState(false)
+
+ const handleTec = () =>{
+  setToogle(!toogle)
+ }
   return (
     <div className="portfolio-parent">
         <div className="portfolio-outer">
@@ -28,7 +33,7 @@ const Portfolio = () => {
       <div class="S4-technologies">
         <div class="S4-technologies-content">
           <h4 id="S4-mobile">Mobile</h4>
-          <h4>Web</h4>
+          <h4 onClick={handleTec} className={toogle ? 'techactive' : '' }>Web</h4>
           <h4>Backend</h4>
           <h4>Frontend</h4>
           <h4>DataBase</h4>

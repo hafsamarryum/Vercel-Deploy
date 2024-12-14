@@ -2,11 +2,12 @@ import React, { useEffect, useState } from "react";
 
 const Range = () => {
   const rangeData = [
-    { id: 1, title: "Full Stack Development", value: 90 },
+    { id: 1, title: "Full Stack Development", value: 92 },
+    { id: 2, title: "SaaS Services", value: 100 },
     { id: 2, title: "Web Development", value: 95 },
     { id: 3, title: "UI / UX Design", value: 97 },
-    { id: 4, title: "App Development", value: 98 },
-    { id: 5, title: "SaaS Services", value: 100 },
+    { id: 5, title: "App Development", value: 98 },
+   
   ];
 
   const [currentValues, setCurrentValues] = useState(

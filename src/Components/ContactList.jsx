@@ -19,7 +19,7 @@ const ContactList = () => {
         {
               id: 3,
               img: message ,
-              des: "SiredBitsTech@gamil.com"
+              des: "SiredBits@gamil.com"
         },
         {
               id: 4,

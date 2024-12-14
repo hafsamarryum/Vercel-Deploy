@@ -68,10 +68,10 @@ const About = () => {
             </p>
             <h5>Digital Creator & Strategists</h5>
             <p className='about-para-top'>
-            At our company, we specialize in crafting innovative digital strategies that drive results. Our team of digital creators and strategists work closely with clients to develop impactful, data-driven solutions tailored to their business goals. We blend creativity with technology to create engaging and effective digital experiences that resonate with audiences.
+            At our company, we specialize in crafting innovative digital strategies that drive results. Our team of digital creators and strategists work closely with clients to develop impactful, data driven solutions tailored to their business goals. We blend creativity with technology to create engaging and effective digital experiences that resonate with audiences.
             </p>
             <p className='about-para-bottom'>
-            <span className='About-sired'>Sired Bit's</span>  is the probably the best place in EU to start a nearshore IT projects – we share the European values and culture, we have a great IT infrastructure, we speak fluent English, we have a very good pool of IT engineers and we are easy to reach from any European country.
+            <span className='About-sired'>SiredBits</span>  is the probably the best place in EU to start a nearshore IT projects we share the European values and culture, we have a great IT infrastructure, we speak fluent English, we have a very good pool of IT engineers and we are easy to reach from any European country.
             </p>
           </div>
         </div>

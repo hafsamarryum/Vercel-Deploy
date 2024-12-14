@@ -21,7 +21,7 @@
     padding: 0 8px;
 }
 .fortyFive{
-    color: rgb(0, 177, 206);
+    color: rgb(73, 111, 191);
     font-size: 1.2rem;
 }
 .services-left h5{
@@ -179,7 +179,6 @@
     .services-right .green-outer{
         height: auto;
         width: 100%;
-        background-color: rgb(53, 171, 57);
         color: rgb(236, 247, 236);
     }
 }

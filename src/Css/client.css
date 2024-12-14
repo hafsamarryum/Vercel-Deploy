@@ -1,26 +1,27 @@
-.client-parent{
+.client-parent {
   height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   padding-left: 90px;
-
 }
-.client-outer{
+
+.client-outer {
   display: flex;
   width: 90%;
   justify-content: space-between;
-  max-width: 1280px;   
+  max-width: 1280px;
   margin-bottom: 30px;
   flex-direction: column;
   color: rgb(105, 105, 105);
 }
+
 .client-upper {
   width: 100%;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  margin-top: 60px;
+  margin-top: 40px;
 }
 
 
@@ -35,6 +36,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  column-gap: 10px;
 }
 
 .client-upper #said {
@@ -63,23 +65,21 @@
   background-color: white;
   border-radius: 15px;
   padding: 20px 40px;
-  margin-top: 30px;
-  margin-bottom: 20px;
+  margin-top: 20px;
+  margin-bottom: 10px;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 .client-card #first-para {
-  min-height: 140px;
+  min-height: 160px;
+  margin-top: 20px;
 }
 
-.client-card #test-icon {
-  height: 50px;
-}
+.client-card #slider-quotation {
+  font-size: 2.5rem;
+  color: rgb(73, 111, 191);
 
-.client-card #first-para {
-  margin-top: 30px;
 }
-
 .avatar-profession-outer {
   display: flex;
   column-gap: 5px;
@@ -91,18 +91,63 @@
   align-items: center;
   column-gap: 20px;
 }
+
 .avatar-profession-outer img {
   width: 60px;
   height: 60px !important;
 }
-.name-description-outer h5{
+
+.name-description-outer h5 {
   font-size: 1rem;
 
 }
-.slick-dots{
+
+.slick-dots {
   position: relative !important;
-  padding-bottom: 20px !important;
   bottom: 0px !important;
 }
 
-.slick-slide>div {padding: 0 15px;}
+.slick-slide>div {
+  padding: 0 15px;
+}
+
+
+@media screen and (max-width: 1110px) {
+  .client-card #first-para {
+    min-height: 180px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .client-card #first-para {
+    min-height: 200px;
+  }
+  .client-parent {
+    padding-left: 10px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .client-parent {
+    height: auto;
+  }
+  .client-outer{
+    margin-top: 80px;
+    text-align: center;
+  }
+  .client-upper .outer {
+    flex-direction: column;
+  }
+  .client-card #first-para {
+    min-height: 220px;
+  }
+   .client-upper #para {
+    width: 100%;
+  }
+  .client-upper>p:first-of-type {
+    text-align: center;
+  }
+}
+@media screen and (max-width: 576px) {
+.client-card #first-para {
+  min-height: 160px;
+}
+}

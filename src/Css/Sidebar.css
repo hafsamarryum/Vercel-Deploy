@@ -6,20 +6,25 @@
 
 .sider-bar {
    width: 90px;
-   height: 100vh;
-   box-shadow: 2px 0 5px -2px #888;
    position: fixed;
    top: 0;
    left: 0;
-   display: flex;
-   flex-direction: column;
-   justify-content: center;
+   z-index: 99;
 }
 
-.logo-outer {
+.sidebar-list-outer {
+   box-shadow: 2px 0 5px -2px #888;
+   background-color: white;
+   height: 100vh;
+   display: flex !important;
+   justify-content: center;
+   align-items: center;
+   padding-top: 30px;
+}
+
+.nav-bar {
    width: 100%;
    height: 90px;
-   background-color: rgb(53, 171, 57);
    box-shadow: 1px 1px 7px #e1e1e1;
    display: flex;
    justify-content: center;
@@ -27,18 +32,26 @@
    cursor: pointer;
    position: absolute;
    top: 0;
+   background-color: rgb(73, 111, 191);
 }
-
-.logo-outer img {
+.nav-logo{
    height: 90px;
-   width: auto;
+   width: 90px;
    display: block;
    object-fit: cover;
 }
+.nav-bar i {
+   font-size: 1.5rem;
+   color: white;
+   display: none;
+   cursor: pointer;
+   display: none  !important;
+}
 
-.sidebar-list-outer {
-   padding-top: 60px;
-   background-color: white;
+.nav-bar i.open {
+   font-size: 3rem;
+   display: block;
+   padding-right: 10px;
 }
 
 .sidebar-icon-wrapper {
@@ -50,9 +63,10 @@
    cursor: pointer;
    border-right: 4px solid transparent;
    border-top: 2px solid rgb(242, 242, 242);
-   text-decoration: none; 
+   text-decoration: none;
    color: rgb(151, 151, 151);
 }
+
 .sidebar-icon-wrapper:hover {
    color: rgb(73, 111, 191);
    border-right: 4px solid rgb(73, 111, 191);
@@ -66,7 +80,7 @@
    height: 25px;
 }
 
-.sidebar-icon-wrapper #contact {
+.sidebar-icon-wrapper #contact { 
    height: 23px !important;
 }
 
@@ -77,36 +91,27 @@
 .sidebar-icon-wrapper p {
    padding-top: 7px;
    font-size: 1rem;
-   
-}
-.hamburger{
-   display: none !important;
 }
 
 @media screen and (max-width: 991px) {
-   .sidebar-list-outer {
-      display: none;
+   .nav-bar {
+       width: 100vw;
+       justify-content: space-between;
    }
 
-   .sider-bar {
-      box-shadow: none;
-      z-index: 999;
+   .nav-bar i {
+       font-size: 3rem;
+       display: block !important;
+       padding-right: 10px;
    }
-   .logo-outer {
-      width: 100vw;
-      justify-content: space-between;
-      padding: 0 20px;  
+
+   .sidebar-list-outer {
+       display: none !important;
    }
-   .logo-outer .hamburger {
-      display: block !important;
-      width: 30px;
-      height: 30px;
+
+   .navbar.active {
+       display: flex !important;
+       justify-content: center;
+       align-items: center;
    }
-   .active {
-      /* width: 100; */
-      height: 100vh;
-      display: block; 
-      padding-top: 120px;
-      box-shadow: 2px 0 5px -2px #888;
-  }
 }
