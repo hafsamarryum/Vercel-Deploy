@@ -9,17 +9,17 @@ const ContactList = () => {
         {
               id: 1,
               img: location ,
-              des: "Dell Way, Round Rock, TX 78682"
+              des: "G-108, DHA Phase 1, Lahore"
         },
         {
               id: 2,
               img: phone ,
-              des: "+92 312 6426807"
+              des: "+92 341 3700 645"
         },
         {
               id: 3,
               img: message ,
-              des: "SiredBits@gamil.com"
+              des: "contact@siredbits.com"
         },
         {
               id: 4,

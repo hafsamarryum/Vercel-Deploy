@@ -18,9 +18,11 @@ const Home = () => {
             Sired<span className="son">Bits</span> Tech Innovation
           </h1>
           <p className="suffered-para">
-            At SiredBits, we specialize in delivering Full-Stack Development services for Mobile, Web Applications, Ui/Ux, AI, DevOps, and SaaS frameworks  creating seamless, scalable, and high-performance solutions. <span className="suffered">Our team of expert </span>developers excels in building responsive, user-friendly applications that cater to diverse business needs.
+            At SiredBits, we specialize in delivering Full-Stack Development services for Mobile, Web Applications, UI/UX, AI, DevOps, and SaaS frameworks  creating seamless, scalable, and high-performance solutions. <span className="suffered">Our team of expert </span>developers excels in building responsive, user-friendly applications that cater to diverse business needs.
           </p>
-          <div className="home-btn"><Link to='/ContactUs' className="custom-link" >Contact Us</Link></div>
+          <Link to='/ContactUs' className="custom-link" >
+          <div className="home-btn">Contact Us</div>
+          </Link>
         </div>
         <div className="home-right">
           <div className="home-girl-wrapper">

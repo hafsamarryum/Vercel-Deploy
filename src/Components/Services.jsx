@@ -35,13 +35,13 @@ const Services = () => {
         </div>
         <div className='services-right'>
          <img src={girl} alt="" />
-         <div className="green-outer">
+         {/* <div className="green-outer">
           <p>Committed to excellence in software development, we provide the expertise you need. With a proven track record, skilled engineers, and extensive experience.
           </p>
           <p className='green-bottom-para'>In more than 10 years of IT outsourcing. We have successfully delivered over 20+ projects across 15 countries. </p>
           <p className='harry-waston'>Team SiredBits</p>
           <p className='abacus'>Your Tech Partner </p>
-         </div>
+         </div> */}
         </div>
       </div>
     </div>

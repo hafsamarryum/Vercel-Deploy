@@ -16,7 +16,7 @@ const Client = () => {
     {
       id: 1,
       title: ' Sofia K ',
-      para: 'Working with Sired Bits was a game changer for our business. Their team understood our vision and delivered a seamless, high-performing mobile app that exceeded our expectations.',
+      para: 'Working with SiredBits was a game changer for our business. Their team understood our vision and delivered a seamless, high-performing mobile app that exceeded our expectations.',
       img: Himg1,
 
       des: ' Digital Marketing',
@@ -24,7 +24,7 @@ const Client = () => {
     {
       id: 2,
       title: "John Samuel",
-      para: 'Their creative and data-driven approach to digital strategy helped us engage with our audience in new and meaningful ways. Sired Bits is not just a service provider; they are a true partner committed to our growth.',
+      para: 'Their creative and data-driven approach to digital strategy helped us engage with our audience in new and meaningful ways. SiredBits is not just a service provider; they are a true partner committed to our growth.',
       img: Himg2,
 
       des: 'CEO',
@@ -32,14 +32,14 @@ const Client = () => {
     {
       id: 3,
       title: 'Michaell',
-      para: 'Sired Bits is by far the best partner for IT projects in Europe. The team’s ability to combine European values with technological excellence made our project a success.',
+      para: 'SiredBits is by far the best partner for IT projects in Europe. The team’s ability to combine European values with technological excellence made our project a success.',
       img: Himg3,
       des: 'Co-Founder',
     },
     {
       id: 4,
       title: 'Jennifer Stance',
-      para: 'We faced challenges with scalability until we partnered with Sired Bits. Their full-stack development expertise delivered a system that performs flawlessly, even under high traffic. We are incredibly grateful!.',
+      para: 'We faced challenges with scalability until we partnered with SiredBits. Their full-stack development expertise delivered a system that performs flawlessly, even under high traffic. We are incredibly grateful!.',
       img: Himg4,
 
       des: 'Mobile App Developer',
@@ -47,7 +47,7 @@ const Client = () => {
     {
       id: 5,
       title: 'Omar Tahir',
-      para: 'From start to finish, Sired Bits showcased their technical brilliance and creative. They made complex problems seem effortless and gave us a solution we’re proud to present to our customers.',
+      para: 'From start to finish, SiredBits showcased their technical brilliance and creative. They made complex problems seem effortless and gave us a solution we’re proud to present to our customers.',
       img: Himg5,
       des: 'Business Manager',
     }
