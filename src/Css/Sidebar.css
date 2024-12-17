@@ -34,18 +34,18 @@
    top: 0;
    background-color: rgb(73, 111, 191);
 }
-.nav-logo{
+
+.nav-logo {
    height: 90px;
    width: 90px;
-   display: block;
    object-fit: cover;
 }
+
 .nav-bar i {
    font-size: 1.5rem;
    color: white;
-   display: none;
    cursor: pointer;
-   display: none  !important;
+   display: none !important;
 }
 
 .nav-bar i.open {
@@ -56,9 +56,9 @@
 
 .sidebar-icon-wrapper {
    display: flex;
-   justify-content: center;
    flex-direction: column;
    align-items: center;
+   justify-content: center;
    height: 70px;
    cursor: pointer;
    border-right: 4px solid transparent;
@@ -66,16 +66,19 @@
    text-decoration: none;
    color: rgb(151, 151, 151);
 }
-
+.sidebar-icon-wrapper.home {
+   border-top: none;
+}
 .sidebar-icon-wrapper:hover {
    color: rgb(73, 111, 191);
-   border-right: 4px solid rgb(73, 111, 191);
 }
 
 .sidebar-icon-wrapper:hover img {
    filter: brightness(0) saturate(100%) invert(63%) sepia(68%) saturate(4105%) hue-rotate(199deg) brightness(76%) contrast(95%);
 }
-
+.activeImage{
+   filter: brightness(0) saturate(100%) invert(63%) sepia(68%) saturate(4105%) hue-rotate(199deg) brightness(76%) contrast(95%);
+}
 .sidebar-icon-wrapper img {
    height: 25px;
 }
@@ -91,6 +94,11 @@
 .sidebar-icon-wrapper p {
    padding-top: 7px;
    font-size: 1rem;
+}
+
+.activeSection {
+   color: rgb(73, 111, 191);
+   border-right: 4px solid rgb(73, 111, 191);
 }
 
 @media screen and (max-width: 991px) {

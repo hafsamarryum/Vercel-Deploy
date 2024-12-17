@@ -7,53 +7,55 @@ import client from '../assest/sidebar/client.png';
 import contact from '../assest/sidebar/contact.png';
 import portfolio from '../assest/sidebar/portfolio.png';
 import services from '../assest/sidebar/services.png';
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 const Sidebar = () => {
     const [hamburgerr, setHamburger] = useState(false);
+    const [activePage, setActivePage] = useState("Home");
 
-    const handlehamburgerr = () => {
-        setHamburger(!hamburgerr);
+    const sidebarLinks = [
+        { name: "Home", path: "/", icon: home },
+        { name: "About", path: "/about", icon: about },
+        { name: "Services", path: "/services", icon: services },
+        { name: "Portfolio", path: "/portfolio", icon: portfolio },
+        { name: "Client", path: "/client", icon: client },
+        { name: "Contact Us", path: "/contactus", icon: contact },
+    ];
+
+    // Combined click handler
+    const handleLinkClick = (section) => {
+        setHamburger(false); 
+        setActivePage(section); 
     };
 
     return (
         <div className="sider-bar">
+
             <div className="nav-bar">
-                <img className='nav-logo' src={logo} alt="logo" />
-                <i onClick={handlehamburgerr} className={`ri-menu-line ${hamburgerr ? 'open' : ''}`}></i>
+                <img className="nav-logo" src={logo} alt="logo" />
+                <i
+                    onClick={() => setHamburger(!hamburgerr)}
+                    className={`ri-menu-line ${hamburgerr ? 'open' : ''}`}
+                ></i>
             </div>
-            
+
             <div className={`sidebar-list-outer navbar ${hamburgerr ? 'active' : ''}`}>
                 <div className="list-wrapper">
-                    <NavLink to="/" className="sidebar-icon-wrapper">
-                        <img src={home} alt="" />
-                        <p>Home</p>
-                    </NavLink>
-
-                    <NavLink to="/about" className="sidebar-icon-wrapper">
-                        <img src={about} alt="" />
-                        <p>About</p>
-                    </NavLink>
-
-                    <NavLink to="/services" className="sidebar-icon-wrapper">
-                        <img src={services} alt="" />
-                        <p>Services</p>
-                    </NavLink>
-
-                    <NavLink to="/portfolio" className="sidebar-icon-wrapper">
-                        <img src={portfolio} alt="" />
-                        <p>Portfolio</p>
-                    </NavLink>
-
-                    <NavLink to="/Client" className="sidebar-icon-wrapper">
-                        <img src={client} alt="" />
-                        <p>Client</p>
-                    </NavLink>
-
-                    <NavLink to="/ContactUs" className="sidebar-icon-wrapper">
-                        <img src={contact} alt="" />
-                        <p>Contact Us</p>
-                    </NavLink>
+                    {sidebarLinks.map(({ name, path, icon }) => (
+                        <NavLink
+                            key={name}
+                            to={path}
+                            onClick={() => handleLinkClick(name)}
+                            className={`sidebar-icon-wrapper ${activePage === name ? 'activeSection' : ''} ${name === "Home" ? 'home' : ''}`}
+                        >
+                            <img
+                                className={activePage === name ? 'activeImage' : ''}
+                                src={icon}
+                                alt={name}
+                            />
+                            <p>{name}</p>
+                        </NavLink>
+                    ))}
                 </div>
             </div>
         </div>
