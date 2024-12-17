@@ -30,7 +30,7 @@ const Portfolio = () => {
       <div class="S4-heading">
         <h1>Our Core Technologies</h1>
       </div>
-      <div class="S4-technologies">
+      {/* <div class="S4-technologies">
         <div class="S4-technologies-content">
           <h4 id="S4-mobile">Mobile</h4>
           <h4 onClick={handleTec} className={toogle ? 'techactive' : '' }>Web</h4>
@@ -41,7 +41,7 @@ const Portfolio = () => {
           <h4>Graphic Design</h4>
           <h4>QA</h4>
         </div>
-      </div>
+      </div> */}
     </div>
     <div class="s4-icons-div">
       <div class="s4-container">
