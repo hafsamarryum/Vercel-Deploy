@@ -132,18 +132,22 @@
   column-gap: 10px;
   row-gap: 5px;
   cursor: pointer;
-
 }
-
 .icon-li-wrapper img {
-  height: 30px;
+  height: 25px;
+  display: block;
 }
-
+.icon-li-wrapper a{
+      padding-top: 5px;
+}
+.icon-li-wrapper a,
 .icon-li-wrapper p {
-  font-size: 14px;
+  margin: 0; 
+  text-decoration: none;
   color: white;
-  
-
+  font-size: 14px;
+  display: flex; 
+  align-items: center; 
 }
 
 .contact-right-lower {

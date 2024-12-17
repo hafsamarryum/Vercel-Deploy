@@ -1,5 +1,4 @@
-
-.services-parent{
+.services-parent {
     width: 100%;
     height: 100vh;
     overflow-y: hidden;
@@ -8,35 +7,40 @@
     justify-content: center;
     padding-left: 90px;
 }
-.services-outer{
+
+.services-outer {
     display: flex;
     width: 90%;
     justify-content: space-between;
-    max-width: 1280px;   
+    max-width: 1280px;
     margin-bottom: 30px;
 }
-.services-left{
+
+.services-left {
     width: 40%;
     color: #585353;
     padding: 0 8px;
 }
-.fortyFive{
+
+.fortyFive {
     color: rgb(73, 111, 191);
     font-size: 1.2rem;
 }
-.services-left h5{
+
+.services-left h5 {
     font-size: 3rem;
     font-weight: 500;
     line-height: 60px;
     padding: 20px 0;
 }
-.range-outer{
+
+.range-outer {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
 }
-.range-outer .top
-{
+
+.range-outer .top {
     display: flex;
     justify-content: space-between;
 }
@@ -44,6 +48,7 @@
 .range-wrapper input[type='range']::-webkit-slider-thumb {
     visibility: hidden;
 }
+
 .range-wrapper input[type="range"] {
     appearance: none;
     width: 100%;
@@ -54,9 +59,9 @@
     cursor: pointer;
     margin-top: 5px;
 
-  }
-  
-  .range-wrapper input[type="range"]::before {
+}
+
+.range-wrapper input[type="range"]::before {
     content: '';
     position: absolute;
     top: 0;
@@ -64,69 +69,78 @@
     height: 100%;
     background: rgb(73, 111, 191);
     border-radius: 5px;
-    width: var(--progress); /* Use dynamic progress value */
+    width: var(--progress);
+    /* Use dynamic progress value */
     transition: width 0.3s ease-out;
-  }
-  
-  @keyframes fill {
+}
+
+@keyframes fill {
     0% {
-      width: 0;
+        width: 0;
     }
+
     100% {
-      width: var(--progress); /* Animate to dynamic progress */
+        width: var(--progress);
+        /* Animate to dynamic progress */
     }
-  }
+}
+
 .services-bottom {
     display: flex;
     justify-content: space-between;
     margin-top: 50px;
 }
-.services-bottom .right, .services-bottom .left{
+
+.services-bottom .right,
+.services-bottom .left {
     display: flex;
     column-gap: 25px;
     align-items: end;
 }
-.services-bottom .right img, .services-bottom .left img { 
+
+.services-bottom .right img,
+.services-bottom .left img {
     width: 50px;
-    object-fit: contain; 
+    object-fit: contain;
     display: block;
     height: auto;
     cursor: pointer;
 }
-.services-counter-wrapper{
+
+.services-counter-wrapper {
     display: flex;
     flex-direction: column;
     row-gap: 10px;
 }
-.services-counter-wrapper h1{
-   font-weight: 500;
-   font-size: 1.5rem;
-   line-height: 1;
+
+.services-counter-wrapper h1 {
+    font-weight: 500;
+    font-size: 1.5rem;
+    line-height: 1;
 }
-.services-counter-wrapper p{
-   line-height: 1;
+
+.services-counter-wrapper p {
+    line-height: 1;
 }
+
 .services-right {
-    background-image: url('../assest/services/dotted.png');
+
     background-size: 30px;
     position: relative;
     display: flex;
     align-items: end;
-    overflow-y: hidden;
+    justify-content: center;
     min-height: 460px;
     width: 55%;
     padding: 0 8px;
 }
-.services-right img{
-    height: 90% ;
-    width: 460px;
-    position: absolute;
-    right: 0;
-    top: 20px;
-    /* padding-bottom: 0px; */
-    
+
+.services-right img {
+    height: 90%;
+    width: 90%;
 }
-.services-right .green-outer{
+
+.services-right .green-outer {
     height: 305px;
     width: 500px;
     background-color: rgb(73, 111, 191);
@@ -134,49 +148,58 @@
     padding: 30px 50px;
     color: rgb(236, 247, 236);
 }
-.services-right .green-outer p{
-      font-size: 15px;
-      padding-bottom: 25px;
-      line-height: 25px;
+
+.services-right .green-outer p {
+    font-size: 15px;
+    padding-bottom: 25px;
+    line-height: 25px;
 }
-.harry-waston{
-      font-size: 1.4rem !important;
-      padding-bottom: 0px !important;
-      font-weight: 500;
+
+.harry-waston {
+    font-size: 1.4rem !important;
+    padding-bottom: 0px !important;
+    font-weight: 500;
 }
-.abacus{
+
+.abacus {
     padding-bottom: 0px !important;
 }
 
 @media screen and (max-width: 991px) {
-    .services-parent{
+    .services-parent {
         height: 100%;
         padding-left: 0px;
     }
-    .services-outer{
+
+    .services-outer {
         flex-direction: column;
         row-gap: 50px;
         margin-top: 120px;
     }
-    .services-left{
+
+    .services-left {
         width: 100%;
     }
-    .services-right{
+
+    .services-right {
         width: 100%;
     }
 }
+
 @media screen and (max-width: 576px) {
     .services-right {
         min-height: 460px;
         width: 100%;
         padding: 0;
     }
-    .services-right img{
-        height: 100% ;
+
+    .services-right img {
+        height: 100%;
         width: 100%;
         top: 0px;
     }
-    .services-right .green-outer{
+
+    .services-right .green-outer {
         height: auto;
         width: 100%;
         color: rgb(236, 247, 236);
